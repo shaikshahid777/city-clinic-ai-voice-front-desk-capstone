@@ -1,0 +1,12 @@
+{
+  "name": "book_appointment",
+  "args": {
+    "first_name": "Test",
+    "last_name": "User",
+    "email": "test@example.com",
+    "phone_number": "9999900001",
+    "booking_date": "2026-10-21",
+    "booking_time": "09:00"
+  },
+  "call": { "call_id": "call_example", "direction": "inbound" }
+}

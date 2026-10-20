@@ -1,0 +1,16 @@
+{
+  "name": "check_calendar_availability",
+  "description": "Queries the calendar for open booking times on a date. Always run this before booking.",
+  "method": "POST",
+  "url": "https://<your-n8n-instance>.app.n8n.cloud/webhook/check-availability",
+  "timeout_ms": 15000,
+  "speak_during_execution": true,
+  "speak_after_execution": true,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "target_date": { "type": "string", "description": "Date to check, format YYYY-MM-DD" }
+    },
+    "required": ["target_date"]
+  }
+}

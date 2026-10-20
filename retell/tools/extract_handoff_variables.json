@@ -1,0 +1,6 @@
+{
+  "name": "extract_handoff_variables",
+  "type": "extract_dynamic_variable",
+  "description": "Saves caller context so the destination agent can greet the caller without repeating questions.",
+  "variables": ["first_name", "identity_verified", "previous_intent", "transcript_summary"]
+}

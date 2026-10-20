@@ -1,0 +1,14 @@
+{
+  "transfer_to_billing_specialist": {
+    "type": "agent_swap",
+    "target_agent": "City Clinic Billing Specialist",
+    "consent_required": true,
+    "post_call_analysis": "destination agent only"
+  },
+  "transfer_to_triage_nurse": {
+    "type": "agent_swap",
+    "target_agent": "City Clinic Triage Nurse",
+    "consent_required": false,
+    "note": "Crisis override: bypasses consent after the 911 safety line."
+  }
+}

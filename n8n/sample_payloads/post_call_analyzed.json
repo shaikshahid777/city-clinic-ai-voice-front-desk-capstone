@@ -1,0 +1,14 @@
+{
+  "event": "call_analyzed",
+  "call": {
+    "call_id": "test_call_postcall_1",
+    "from_number": "9999900003",
+    "direction": "inbound",
+    "duration_ms": 45500,
+    "call_analysis": {
+      "call_summary": "Caller asked about parking hours.",
+      "user_sentiment": "Positive",
+      "custom_analysis_data": { "outcome": "faq_resolved" }
+    }
+  }
+}

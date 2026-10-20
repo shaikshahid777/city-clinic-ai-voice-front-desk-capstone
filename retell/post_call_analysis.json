@@ -1,0 +1,21 @@
+{
+  "default_fields": ["call_summary", "user_sentiment"],
+  "custom_fields": [
+    {
+      "name": "outcome",
+      "type": "selector",
+      "choices": ["booked", "faq_resolved", "transferred", "opt_out_dnc"],
+      "rules": {
+        "booked": "An appointment was confirmed.",
+        "faq_resolved": "Only questions were answered.",
+        "transferred": "The call was handed to Billing or the nurse.",
+        "opt_out_dnc": "The caller asked to stop calls."
+      }
+    }
+  ],
+  "webhook": {
+    "event": "call_analyzed",
+    "url": "https://<your-n8n-instance>.app.n8n.cloud/webhook/retell-postcall",
+    "attached_to": "City Clinic Front Desk only (one event per call)"
+  }
+}

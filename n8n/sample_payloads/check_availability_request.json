@@ -1,0 +1,5 @@
+{
+  "name": "check_calendar_availability",
+  "args": { "target_date": "2026-10-21" },
+  "call": { "call_id": "call_example", "direction": "inbound" }
+}

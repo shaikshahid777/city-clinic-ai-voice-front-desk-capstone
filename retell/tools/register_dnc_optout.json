@@ -1,0 +1,10 @@
+{
+  "name": "register_dnc_optout",
+  "description": "Adds the caller to the Do-Not-Call registry.",
+  "method": "POST",
+  "url": "https://<your-n8n-instance>.app.n8n.cloud/webhook/register-dnc",
+  "timeout_ms": 15000,
+  "speak_during_execution": true,
+  "speak_after_execution": true,
+  "parameters": { "type": "object", "properties": {} }
+}

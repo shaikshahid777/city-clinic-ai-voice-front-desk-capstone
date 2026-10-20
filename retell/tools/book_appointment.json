@@ -1,0 +1,21 @@
+{
+  "name": "book_appointment",
+  "description": "Books the appointment, creates the calendar event and saves the lead in the CRM.",
+  "method": "POST",
+  "url": "https://<your-n8n-instance>.app.n8n.cloud/webhook/book-appointment",
+  "timeout_ms": 15000,
+  "speak_during_execution": true,
+  "speak_after_execution": true,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "first_name": { "type": "string" },
+      "last_name": { "type": "string" },
+      "email": { "type": "string" },
+      "phone_number": { "type": "string" },
+      "booking_date": { "type": "string", "description": "YYYY-MM-DD" },
+      "booking_time": { "type": "string", "description": "HH:MM 24-hour, e.g. 14:00" }
+    },
+    "required": ["first_name", "last_name", "email", "phone_number", "booking_date", "booking_time"]
+  }
+}
